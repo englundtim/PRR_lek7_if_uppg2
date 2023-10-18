@@ -43,7 +43,24 @@ public class App {
         else if(klockan>23 || klockan<4){
             System.out.println("Dags att gå och lägga sig");
         }
+
+        System.out.println("Uppgift e)");
+        System.out.println("Du går runt en kväll på sveavägen med dina kompisar, ni ser en klubb lite längre fram. Ni tar er emot den, går fram till dörrvakten. Han är rätt söt men det är inte viktigt. Han ställer två frågor");
+        System.out.println("Hur gammal är du?");
+        int ålder = in.nextInt();
+        System.out.println("Är du medlem? true/false");
+        boolean medlem = in.nextBoolean();
+        
+        if(ålder>17 || medlem==true){
+            System.out.println("Välkommen in");
+        }
+        else{
+            System.out.println("Stick här ifrån grabben");
+        }
+        
+        
     }
+
 
         
 
