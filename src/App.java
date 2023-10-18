@@ -58,6 +58,18 @@ public class App {
             System.out.println("Stick här ifrån grabben");
         }
         
+        System.out.println("uppgift f)");
+        System.out.println("Användarnamn");
+        String user = in.nextLine();
+        System.out.println("Lösenord");
+        String password = in.nextLine();
+
+        if(user=="root" || password=="passwd"){
+            System.out.println("Dis maj haus, entray pläjse");
+        }
+        else{
+            System.out.println("Nuh uh du får inte komma in :)");
+        }
         
     }
 
