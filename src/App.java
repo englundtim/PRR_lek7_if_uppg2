@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
         Scanner in = new Scanner(System.in);
-        System.out.println("Uppgift a)");
+        System.out.println("uppgift a)");
         int litetTal=10;
         int stortTal=1000;
 
@@ -20,7 +20,7 @@ public class App {
 
         //Detta funkar inte då int stortTal bara finns i första if-satsen och inte i resten
         //för att få det att funka måste skriva den utanför fiskmåsarna t.ex på line 5 som jag gjort
-        System.out.println("Uppgift b+c)");
+        System.out.println("uppgift b+c)");
         int tal1=10;
         int tal2=0;
 
@@ -31,7 +31,7 @@ public class App {
             System.out.println(tal2+" är mindre än "+tal1);
         }
 
-        System.out.println("Uppgift d)");
+        System.out.println("uppgift d)");
         System.out.println("Hur mycket är klockan, avrunda till heltal?");
         int klockan = in.nextInt();
         if(klockan>7 && klockan<12){
@@ -44,7 +44,7 @@ public class App {
             System.out.println("Dags att gå och lägga sig");
         }
 
-        System.out.println("Uppgift e)");
+        System.out.println("uppgift e)");
         System.out.println("Du går runt en kväll på sveavägen med dina kompisar, ni ser en klubb lite längre fram. Ni tar er emot den, går fram till dörrvakten. Han är rätt söt men det är inte viktigt. Han ställer två frågor");
         System.out.println("Hur gammal är du?");
         int ålder = in.nextInt();
@@ -70,12 +70,33 @@ public class App {
         else{
             System.out.println("Nuh uh du får inte komma in :)");
         }
+
+        System.out.println("uppgift g");
         
+        
+        System.out.println("Meny Väderprogram:");
+        System.out.println("1. Skriv ut temperatur");
+        System.out.println("2. Skriv ut vind");
+        System.out.println("3. Skriv ut luftfuktighet");
+        System.out.println("Ange val:");
+
+        int val = in.nextInt();
+        switch(val){
+            case 1 : 
+                System.out.println("Det är 18 grader");
+                break;
+            case 2 :
+                System.out.println("Vinden är 10 sekund-meter");
+                break;
+            case 3 :
+                System.out.println("Det är 100% luftfuktighet");
+                break;
+            default :
+                System.out.println("Fel val");
+        }
+        
+
     }
-
-
-        
-
         
 }
 
